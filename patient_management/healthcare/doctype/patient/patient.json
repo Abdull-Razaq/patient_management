@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:patient_name",
  "creation": "2026-01-22 14:33:26.220540",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,14 +9,18 @@
   "patient_name",
   "gender",
   "date_of_birth",
-  "phone_number",
+  "column_break_goza",
   "email",
+  "phone_number",
   "national_id",
+  "column_break_itno",
   "insurance_provider",
   "insurance_number",
   "patient_status",
+  "column_break_xwwd",
   "patient_photo",
   "id_document",
+  "section_break_9mla",
   "notes"
  ],
  "fields": [
@@ -25,7 +30,8 @@
    "in_list_view": 1,
    "label": "Patient Name",
    "options": "Full Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "gender",
@@ -97,15 +103,32 @@
    "fieldtype": "Text Editor",
    "label": "Notes ",
    "options": "Medical notes"
+  },
+  {
+   "fieldname": "column_break_goza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_itno",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xwwd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9mla",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-22 14:54:39.868624",
+ "modified": "2026-01-24 21:24:47.441902",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
