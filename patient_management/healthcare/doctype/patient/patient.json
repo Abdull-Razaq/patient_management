@@ -9,9 +9,11 @@
   "patient_name",
   "gender",
   "date_of_birth",
+  "age",
   "column_break_goza",
   "email",
   "phone_number",
+  "id_type",
   "national_id",
   "column_break_itno",
   "insurance_provider",
@@ -20,9 +22,11 @@
   "column_break_xwwd",
   "patient_photo",
   "id_document",
+  "insurance_card",
   "section_break_9mla",
   "notes",
-  "user"
+  "user",
+  "current_address"
  ],
  "fields": [
   {
@@ -62,7 +66,8 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email"
+   "options": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "national_id",
@@ -125,13 +130,36 @@
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "user",
-   "options": "User"
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_type",
+   "fieldtype": "Select",
+   "label": "ID Type",
+   "options": "<select>\nNational ID\nPassport\nBirth Certificate"
+  },
+  {
+   "fieldname": "insurance_card",
+   "fieldtype": "Attach",
+   "label": "Insurance Card"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-26 13:20:09.555396",
+ "modified": "2026-01-27 10:20:41.993022",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient",
