@@ -57,7 +57,7 @@
   {
    "fetch_if_empty": 1,
    "fieldname": "availability_schedule",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Availability Schedule",
    "options": "Doctor Availability"
   },
@@ -78,7 +78,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-30 00:22:46.781261",
+ "modified": "2026-01-30 09:29:41.494309",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Doctor",

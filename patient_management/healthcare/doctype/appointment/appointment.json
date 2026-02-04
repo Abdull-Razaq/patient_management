@@ -1,7 +1,9 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:patient",
  "creation": "2026-01-30 00:33:59.176600",
+ "default_view": "Calendar",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -18,7 +20,8 @@
    "fieldname": "patient",
    "fieldtype": "Link",
    "label": "Patient",
-   "options": "Patient"
+   "options": "Patient",
+   "unique": 1
   },
   {
    "fieldname": "doctor",
@@ -56,11 +59,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
  "links": [],
- "modified": "2026-01-30 00:37:54.285180",
+ "modified": "2026-01-30 10:20:44.663851",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Appointment",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
